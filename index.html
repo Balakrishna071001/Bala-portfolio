@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--    favicon    -->
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+        <link rel="manifest" href="./assets/img/site.webmanifest">
+
+        <!-- remix icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--    css     -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <title>Mini portfolio website</title>
+</head>
+<body>
+    
+    <!-- header profile -->
+    <header class="profile container">
+
+        <!-- theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfile">
+                        <img src="./assets/img/prof_3-removebg-preview.png" alt="">
+                    </div>
+                </div>
+                <h2 class="profile__name">Balakrishna Bhubarpa</h2>
+                <h3 class="profile__profession">Web developer</h3>
+
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/baalaa_here/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/balakrishna-bhubarpa-17b639200/" target="_blank" class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">0</h3>
+                    <p class="profile__info-description">
+                        Years of <br> work 
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">1</h3>
+                    <p class="profile__info-description">
+                        Completed <br> Projects
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">0</h3>
+                    <p class="profile__info-description">
+                         Satisfied <br> Customers
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+
+                <!-- insert your CV  -->
+                <a  download="" href="./assets/pdf/Bala-resume-pdf.pdf" class="button">
+                    Download CV <i class="ri-download-line"></i>
+                </a>
+                <div class="profile__button-small">
+                    <a href="https://api.whatsapp.com/send?phone=91+9967491709&text=Hello, more information" target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                        <a href=""  target="_blank" class="button button__small button__gray">
+                        <i class="ri-messenger-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- main  -->
+    <main class="main">
+        <section class="filters container">
+            <!-- filters tabs -->
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#project">
+                    Projects
+                </button>
+                <button class="filters__button filter-tab-active" data-target="#skills">
+                    Skills
+                </button>
+            </ul>
+            <div class="filters__section">
+            <!-- projects -->
+                <div class="project__content grid filters__active" data-content id="project">
+                    <article class="project__card">
+                        <img src="assets/img/pro 1 img.jpg" alt="" class="project__img img-fulid">
+
+                        <div class="project__modal">
+                            <div>
+                                    <span class="project__subtitle">Website</span>
+                                    <h3 class="project__title">Boat Ecommerce site</h3>
+                                    <a href="https://bala-boatnirvana-website.netlify.app/" class="project__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            <!-- skills -->
+                <div class="skills__content grid"  data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Frontend Developer
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                 <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                 </div>
+
+                                 <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                 </div>
+
+                                 <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Javascript</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                 </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <!-- <div class="skills__data">g
+                                   <i class="ri-checkbox-circle-line"></i>
+
+                                   <div>
+                                       <h3 class="skills_name">React</h3>
+                                       <span class="skills__level">Intermediate</span>
+                                   </div>
+                                </div> -->
+
+                                <div class="skills__data">
+                                   <i class="ri-checkbox-circle-line"></i>
+
+                                   <div>
+                                       <h3 class="skills_name">Bootstrap</h3>
+                                       <span class="skills__level">Intermediate</span>
+                                   </div>
+                                </div>
+
+                                <div class="skills__data">
+                                   <i class="ri-checkbox-circle-line"></i>
+
+                                   <div>
+                                       <h3 class="skills_name">Git Bash</h3>
+                                       <span class="skills__level">Intermediate</span>
+                                   </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">
+                            Backend Developer
+                        </h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                 <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Java</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                 </div>
+
+                                 <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">MYSQL</h3>
+                                        <span class="skills__level">Advanced</span>
+                                    </div>
+                                 </div>
+
+                                 <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills_name">Python</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                 </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                   <i class="ri-checkbox-circle-line"></i>
+
+                                   <div>
+                                       <h3 class="skills_name">C++</h3>
+                                       <span class="skills__level">Intermediate</span>
+                                   </div>
+                                </div>
+
+                                <div class="skills__data">
+                                   <i class="ri-checkbox-circle-line"></i>
+
+                                   <div>
+                                       <h3 class="skills_name">C</h3>
+                                       <span class="skills__level">Intermediate</span>
+                                   </div>
+                                </div>
+
+                               
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>    
+    </main>
+
+    <!-- footer -->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; Balakrishna. All rights reserved
+        </span>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="./assets/js/scrolljs.js"></script>
+
+    <!--  main js   -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
